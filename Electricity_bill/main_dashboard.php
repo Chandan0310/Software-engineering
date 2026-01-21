@@ -12,16 +12,6 @@ $meter = isset($_GET['meter']) ? $_GET['meter'] : "";
 <div class="container">
     <h2>Main Dashboard</h2>
 
-    <?php if($meter){ ?>
-    <div style="background-color: #d4edda; color: #155724; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
-        <p style="margin: 0;">Registration Successful!</p>
-        <p style="margin: 0;">Your Meter Number is: <strong><?php echo $meter; ?></strong></p>
-        <?php if(isset($_GET['bill_no'])){ ?>
-        <p style="margin: 0;">Your Bill Number is: <strong><?php echo $_GET['bill_no']; ?></strong></p>
-        <?php } ?>
-    </div>
-    <?php } ?>
-
     <div class="dashboard-options">
 
         <a href="user_dashboard.php?meter=<?php echo $meter; ?>" class="dash-box">
